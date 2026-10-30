@@ -87,23 +87,30 @@ function Hero() {
   const datos = [
     ['10+', 'cuentas de redes gestionadas'],
     ['3', 'áreas: diseño, video y web'],
-    ['4+', 'años de experiencia'],,
+    ['4+', 'años de experiencia'],
   ]
 
   return (
-    <section id="inicio" className="relative min-h-[92vh] overflow-hidden px-5 pb-24 pt-40">
+    <section id="inicio" className="relative overflow-hidden pb-24 md:min-h-[92vh] md:px-5 md:pb-24 md:pt-40">
       <div
-        className="absolute inset-y-0 right-0 w-full bg-cover bg-top bg-no-repeat md:w-[58%] md:bg-right"
+        className="absolute inset-y-0 right-0 hidden w-[58%] bg-cover bg-right bg-no-repeat md:block"
         style={{ backgroundImage: "url('/foto.jpg')" }}
       />
-      <div className="absolute inset-0 bg-ink/60 md:hidden" />
       <div className="absolute inset-0 hidden bg-gradient-to-r from-ink from-40% via-ink/60 via-55% to-transparent md:block" />
-      <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-ink via-ink/80 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 hidden h-2/3 bg-gradient-to-t from-ink via-ink/80 to-transparent md:block" />
+
+      <div className="relative h-[62vh] md:hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-top bg-no-repeat"
+          style={{ backgroundImage: "url('/foto.jpg')" }}
+        />
+        <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-ink to-transparent" />
+      </div>
 
       <div className="animate-float absolute -left-20 top-24 h-72 w-72 rounded-full bg-violet/30 blur-3xl" />
       <div className="animate-float absolute bottom-10 left-1/3 h-64 w-64 rounded-full bg-magenta/20 blur-3xl [animation-delay:3s]" />
 
-      <div className="animate-rise relative mx-auto max-w-[1440px]">
+      <div className="animate-rise relative mx-auto -mt-20 max-w-[1440px] px-5 md:mt-0 md:px-0">
         <div className="max-w-4xl">
           <p className="mb-6 inline-block rounded-full border border-white/20 bg-ink/40 px-4 py-1 text-sm text-white/80 backdrop-blur">
             Disponible para nuevos proyectos
