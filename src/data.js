@@ -3,8 +3,8 @@ export const info = {
   titulo: 'Diseñadora Gráfica, Editora de Video y Desarrolladora Web',
   email: 'altueyorgeidys@gmail.com',
   whatsapp: '584245279930',
-  instagram: 'https://www.instagram.com/yorgeidysaltuve',
-  linkedin: 'https://www.linkedin.com/in/yorgeidys',
+  instagram: 'https://www.instagram.com/yorgeidysaltuve/',
+  linkedin: 'https://www.linkedin.com/in/yorgeidys-de-altuve-39456432b/',
 }
 
 export const categorias = ['Todos', 'Branding', 'Redes sociales', 'Video', 'Posters', 'Web']

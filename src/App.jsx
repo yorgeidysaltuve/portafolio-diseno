@@ -489,7 +489,7 @@ function Referencia() {
 function Contacto() {
   const enlaces = [
     ['Correo', `mailto:${info.email}`],
-    ['WhatsApp', `https://wa.me/${info.whatsapp}`],
+        ['WhatsApp', `https://wa.me/${info.whatsapp}?text=${encodeURIComponent('Hola Yorgeidys, vi tu portafolio y me gustaría hablar contigo sobre un proyecto.')}`],
     ['Instagram', info.instagram],
     ['LinkedIn', info.linkedin],
   ]
@@ -538,7 +538,7 @@ export default function App() {
         © {new Date().getFullYear()} {info.nombre}. Todos los derechos reservados.
       </footer>
       <a
-        href={`https://wa.me/${info.whatsapp}`}
+                href={`https://wa.me/${info.whatsapp}?text=${encodeURIComponent('Hola Yorgeidys, vi tu portafolio y me gustaría hablar contigo sobre un proyecto.')}`}
         target="_blank"
         rel="noreferrer"
         aria-label="Escríbeme por WhatsApp"
